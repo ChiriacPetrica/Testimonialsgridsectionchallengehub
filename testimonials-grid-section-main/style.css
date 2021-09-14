@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(0, 0%, 81%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  max-width: 144rem;
+  margin: 15rem auto;
+}
+
+.mainbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.padding {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-radius: 10px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.box1 {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 10px;
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1 / 3;
+}
+.box2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3 / 4;
+}
+.box3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.box4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+.box5 {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+h2 {
+  color: hsl(0, 0%, 81%);
+  font-size: 1.3rem;
+}
+
+.graduate {
+  color: hsl(0, 0%, 81%);
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.big {
+  font-size: 2.9rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.box3 .big,
+.box5 .big {
+  color: hsl(217, 19%, 35%);
+}
+
+.small {
+  opacity: 0.7;
+  color: hsl(0, 0%, 81%);
+  font-size: 1.81rem;
+}
+
+.box3 h2,
+.box5 h2 {
+  color: hsl(217, 19%, 35%);
+}
+
+.box3 .small,
+.box5 .small {
+  opacity: 1;
+}
+
+.box3 .graduate,
+.box5 .graduate {
+  opacity: 1;
+}
+
+@media (max-width: 34em) {
+  body {
+    padding: 5rem 2rem;
+  }
+
+  html {
+    font-size: 49.5%;
+  }
+
+  .container {
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr); */
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* .box1 {
+    grid-row: 1 / 3;
+  }
+
+  .box2 {
+    grid-row: 3 / 4;
+  }
+
+  .box3 {
+    grid-row: 4 / 5;
+  }
+
+  .box4 {
+    grid-row: 5 / 7;
+  }
+
+  .box5 {
+    grid-row: 7 / -1;
+  } */
+}
